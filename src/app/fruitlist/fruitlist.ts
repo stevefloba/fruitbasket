@@ -64,8 +64,12 @@ export class Fruitlist {
     },
   ]
 
-  nameLog(name: string) {
-    console.log(name);
+  addComment(comment:string, index:number){
+this.fruitlist[index].reviews.push({
+  name: "Jemand von und zu",
+  text: comment,
+})
   }
+
 
 }
